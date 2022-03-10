@@ -47,11 +47,6 @@ code {
   transition: background-color 0.2s;
   
 }
-.navbar-white {
-  background-color: rgba(234, 236, 239, 0.7
-  );
-  transition: background-color 0.2s;
-}
 
 .brand {
   color: #ffffff !important;
@@ -154,6 +149,7 @@ code {
 .progress-bar{
   background-color: #46257d;
 }
+
 .progress-bar-animation {
   @extend .progress;
   & > * {

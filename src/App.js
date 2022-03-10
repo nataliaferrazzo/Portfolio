@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   navBar,
   mainBody,
@@ -22,6 +22,28 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
+import { Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+
+
+
+
+const About = React.forwardRef((props, ref) => {
+  return (
+    <>
+      {
+        about.show && (
+          <AboutMe
+            heading={about.heading}
+            message={about.message}
+            link={about.imageLink}
+            imgSize={about.imageSize}
+            resume={about.resume}
+          />
+        )}
+    </>
+  );
+});
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -31,30 +53,18 @@ const Home = React.forwardRef((props, ref) => {
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
         message={mainBody.message}
         icons={mainBody.icons}
-        ref={ref}
       />
-      {about.show && (
-        <AboutMe
-          heading={about.heading}
-          message={about.message}
-          link={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
-        />
-      )}
+    </>
+  );
+});
+const Exp = React.forwardRef((props, ref) => {
+  return (
+    <>
       {
         experiences.show && (
-          <Experience experiences={experiences}/>
+          <Experience experiences={experiences} />
         )
       }
-      {repos.show && (
-        <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
-        />
-      )}
       {leadership.show && (
         <Leadership
           heading={leadership.heading}
@@ -70,20 +80,35 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
-      
+    </>
+  );
+});
+
+const Proj = React.forwardRef((props, ref) => {
+  return (
+    <>
+      {repos.show && (
+        <Project
+          heading={repos.heading}
+          username={repos.gitHubUsername}
+          length={repos.reposLength}
+          specfic={repos.specificRepos}
+        />
+      )}
+
     </>
   );
 });
 
 const App = () => {
   const titleRef = React.useRef();
-
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
       {navBar.show && <Navbar ref={titleRef} />}
-      <Route path="/" exact component={() => <Home ref={titleRef} />} />
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
+      <Switch>
+        <Route path="/" exact component={() => <Home ref={titleRef} />} />
+        <Route path="/aboutme" exact component={() => <About />} />
+      </Switch>
       <Footer>
         {getInTouch.show && (
           <GetInTouch
