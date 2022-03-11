@@ -35,8 +35,8 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
     <div id="aboutme" className="jumbotron jumbotron-fluid m-0">
       <div id="empty2"></div>
       <div className="container container-fluid">
-        <div className="row">
-          <div className="col-5 d-none d-lg-block align-self-center">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-lg-5 col-auto md-center align-self-center">
             {showPic && (
               <img
                 className="border border-secondary rounded-circle"
@@ -47,10 +47,11 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
               />
             )}
           </div>
-
+          <div id="empty3" className="d-lg-none"></div>
           <div className={`col-lg-${showPic ? "7" : "12"}`}>
             <h2 className="display-4 mb-5 text-center text-title">{heading}</h2>
             <p className="lead text-center text">{message}</p>
+            <div id="empty3"></div>
             {resume && (
               <p className="lead text-center">
                 <a
@@ -68,7 +69,6 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           </div>
         </div>
       </div>
-      <div id="empty3"></div>
     </div>
   );
 };
