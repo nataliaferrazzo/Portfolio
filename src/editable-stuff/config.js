@@ -72,7 +72,7 @@ const leadership = {
 const certificates = {
   show: true,
   heading: "Certificates and Badges",
-  images: [
+  data: [
     {
       image: require('../assets/badges/ESEF.png'),
       url: "https://www.efset.org/cert/fioTf1",

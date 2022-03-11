@@ -4,6 +4,7 @@ import {
     Col,
     Card
  } from "react-bootstrap";
+ 
 const ExperienceCard = ({data}) => {
     return ( 
         <Col lg="6">
