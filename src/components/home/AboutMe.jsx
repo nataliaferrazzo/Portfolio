@@ -33,6 +33,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
 
   return (
     <div id="aboutme" className="jumbotron jumbotron-fluid m-0">
+      <div id="empty2"></div>
       <div className="container container-fluid">
         <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center">
@@ -67,6 +68,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           </div>
         </div>
       </div>
+      <div id="empty3"></div>
     </div>
   );
 };

@@ -5,23 +5,19 @@ const Footer = (props) => {
   const bgStyle = { backgroundColor: "#f5f5f5" };
 
   return (
-    <footer style={bgStyle} className="mt-auto py-5 text-center ">
+    <footer style={bgStyle} className="mt-auto py-5 text-center bg-transparent">
       <Container>
         {props.children}
-        <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
-        <a
-          className="badge badge-dark"
-          rel="noopener"
-          href="https://github.com/nataliaferrazzo"
-          aria-label="My GitHub"
-        >
-          Hashir Shoaib
-        </a>{" "}
-        using <i className="fab fa-react" />
         <p>
           <small className="text-muted">
-            Project code is open source. Feel free to fork and make your own
-            version.
+            Project highly inspired in {" "} template version made by 
+            <a
+              className="badge badge-white"
+              rel="noopener"
+              href="https://github.com/hashirshoaeb"
+              aria-label="GitHub"
+            >          Hashir Shoaib
+            </a>
           </small>
         </p>
       </Container>

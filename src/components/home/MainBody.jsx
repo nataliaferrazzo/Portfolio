@@ -13,7 +13,7 @@ const MainBody = React.forwardRef(
           background: `linear-gradient(136deg,${gradient})`,
           backgroundSize: "1200% 1200%"
         }}
-        className="title bg-transparent bgstyle text-light min-vh-100 max-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
+        className="title bg-transparent bgstyle text-light max-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
         <div className="static-gradient">
         <div id="stars"></div>
@@ -41,7 +41,7 @@ const MainBody = React.forwardRef(
           </div>
           <a
             className="btn btn-outline-light btn-lg "
-            href="#aboutme"
+            href="aboutme"
             role="button"
             aria-label="Learn more about me"
           >

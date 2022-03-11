@@ -5,7 +5,7 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#072242, #46257d, #311052, #5d0cad, #0d0a61",
+  gradientColors: "#072242, #311052, #5d0cad, #0d0a61",
   firstName: "Natália",
   middleName: "Capra",
   lastName: "Ferrazzo",
@@ -16,10 +16,6 @@ const mainBody = {
       url: "https://github.com/nataliaferrazzo",
     },
     {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/nataliaferrazzo/",
     }
@@ -28,7 +24,7 @@ const mainBody = {
 
 const about = {
   show: true,
-  heading: "About Me",
+  heading: "About",
   imageLink: require("./Eu.jpeg"),
   imageSize: 375,
   message:
@@ -49,12 +45,12 @@ const repos = {
   specificRepos: [],
 };
 
-// Leadership SECTION
+// Certificate SECTION
 const leadership = {
   show: false,
-  heading: "Leadership",
+  heading: "Certificates and Badges",
   message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
+    "Here are some of my leadership",
   images: [
     { 
       img: require("./Eu.jpeg"), 
@@ -73,19 +69,38 @@ const leadership = {
   }
 };
 
+const certificates = {
+  show: true,
+  heading: "Certificates and Badges",
+  images: [
+    {
+      image: require('../assets/badges/ESEF.png'),
+      url: "https://www.efset.org/cert/fioTf1",
+    },
+    {
+      image: "fa-linkedin",
+      url: "https://www.linkedin.com/in/nataliaferrazzo/",
+    }
+  ],
+  imageSize: {
+    width:"615",
+    height:"450"
+  }
+};
+
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: "Professional Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 70 },
-    { name: "Quantum Computing", value: 60 },
-    { name: "Physics", value: 75 },
-    { name: "JavaScript", value: 70 },
+    { name: "Python", value: 85 },
+    { name: "SQL", value: 50 },
+    { name: "Quantum Computing", value: 30 },
+    { name: "ETL", value: 60 },
+    { name: "JavaScript", value: 60 },
     { name: "React", value: 60 },
     { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "Git", value: 75 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -101,16 +116,14 @@ const skills = {
 
 // GET IN TOUCH SECTION
 const getInTouch = {
-  show: true,
+  show: false,
   heading: "Get In Touch",
-  message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+  email: "nataliaferrazzo@hotmail.com",
 };
 
 const experiences = {
   show: true,
-  heading: "Experiences",
+  heading: "Professional Experiences",
   data: [
     {
       role: 'Developer Intern',// Here Add Company Name
@@ -125,9 +138,10 @@ const experiences = {
   ]
 }
 
+
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, certificates };

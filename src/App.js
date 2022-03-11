@@ -8,7 +8,8 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
+  experiences,
+  certificates
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -20,13 +21,24 @@ import Skills from "./components/home/Skills";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
-
 import Experience from "./components/home/Experience";
 import { Switch } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
+import Certificate from "./components/home/Certificates.jsx";
 
 
-
+const Home = React.forwardRef((props, ref) => {
+  return (
+    <>
+      <MainBody
+        gradient={mainBody.gradientColors}
+        title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
+        message={mainBody.message}
+        icons={mainBody.icons}
+      />
+    </>
+  );
+});
 
 const About = React.forwardRef((props, ref) => {
   return (
@@ -41,22 +53,18 @@ const About = React.forwardRef((props, ref) => {
             resume={about.resume}
           />
         )}
+      {getInTouch.show && (
+        <GetInTouch
+          heading={getInTouch.heading}
+          message={getInTouch.message}
+          email={getInTouch.email}
+        />
+      )}
     </>
   );
 });
 
-const Home = React.forwardRef((props, ref) => {
-  return (
-    <>
-      <MainBody
-        gradient={mainBody.gradientColors}
-        title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
-        icons={mainBody.icons}
-      />
-    </>
-  );
-});
+
 const Exp = React.forwardRef((props, ref) => {
   return (
     <>
@@ -65,6 +73,12 @@ const Exp = React.forwardRef((props, ref) => {
           <Experience experiences={experiences} />
         )
       }
+      {certificates.show && (
+        <Certificate
+          heading={leadership.heading}
+          img={certificates.images}
+        />
+      )}
       {leadership.show && (
         <Leadership
           heading={leadership.heading}
@@ -100,6 +114,21 @@ const Proj = React.forwardRef((props, ref) => {
   );
 });
 
+const Cont = React.forwardRef((props, ref) => {
+  return (
+    <>
+      {getInTouch.show && (
+        <GetInTouch
+          heading={getInTouch.heading}
+          message={getInTouch.message}
+          email={getInTouch.email}
+        />
+      )}
+
+    </>
+  );
+});
+
 const App = () => {
   const titleRef = React.useRef();
   return (
@@ -108,16 +137,9 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={() => <Home ref={titleRef} />} />
         <Route path="/aboutme" exact component={() => <About />} />
+        <Route path="/experience" exact component={() => <Exp ref={titleRef} />} />
+        <Route path="/projects" exact component={() => <Proj />} />
       </Switch>
-      <Footer>
-        {getInTouch.show && (
-          <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
-            email={getInTouch.email}
-          />
-        )}
-      </Footer>
     </BrowserRouter>
   );
 };
