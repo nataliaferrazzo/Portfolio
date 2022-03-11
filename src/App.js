@@ -9,7 +9,7 @@ import {
   skills,
   getInTouch,
   experiences,
-  certificates
+  badges
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -24,8 +24,7 @@ import Leadership from "./components/home/Leadership.jsx";
 import Experience from "./components/home/Experience";
 import { Switch } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-import Certificate from "./components/home/Certificates.jsx";
-
+import Badge from "./components/home/Badge.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -73,12 +72,11 @@ const Exp = React.forwardRef((props, ref) => {
           <Experience experiences={experiences} />
         )
       }
-      {certificates.show && (
-        <Certificate
-          heading={leadership.heading}
-          img={certificates.images}
-        />
-      )}
+      {
+        badges.show && (
+          <Badge badges={badges} />
+      )
+      }
       {leadership.show && (
         <Leadership
           heading={leadership.heading}

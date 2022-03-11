@@ -6,7 +6,7 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#072242, #311052, #5d0cad, #0d0a61",
+  gradientColors: "#072242, #5d0cad, #311052, #0d0a61",
   firstName: "Natália",
   middleName: "Capra",
   lastName: "Ferrazzo",
@@ -70,24 +70,6 @@ const leadership = {
   }
 };
 
-const certificates = {
-  show: true,
-  heading: "Certificates and Badges",
-  data: [
-    {
-      image: require('../assets/badges/ESEF.png'),
-      url: "https://www.efset.org/cert/fioTf1",
-    },
-    {
-      image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/nataliaferrazzo/",
-    }
-  ],
-  imageSize: {
-    width:"615",
-    height:"450"
-  }
-};
 
 // SKILLS SECTION
 const skills = {
@@ -139,10 +121,100 @@ const experiences = {
   ]
 }
 
+const badges = {
+  show: true,
+  heading: "Certificates and Badges",
+  data: [
+    {
+      heading: 'English C2 - Proficient',
+      company: 'EF Standard English Test',
+      date: 'Issued in March 2021',
+      logo: require('../assets/badges/ESEF.png'),
+      url: "https://www.efset.org/cert/fioTf1"
+    },
+    {
+      heading: 'Quantum Conversations',
+      company: 'IBM',
+      date: 'Issued in January 2022',
+      logo: require('../assets/badges/Quantum_Conversations.png'),
+      url: "https://www.credly.com/badges/867214af-e828-4529-8b3c-2e11231a8334/public_url"
+    },
+    {
+      heading: 'Watson Hands-On',
+      company: 'IBM',
+      date: 'Issued in September 2021',
+      logo: require('../assets/badges/Watson-Assistant-Hands-On.png'),
+      url: "https://www.credly.com/badges/e4ce6b23-ae0b-40ef-8bcf-b049363d759f/public_url"
+    },
+    {
+      heading: 'Machine Learning Foundations',
+      company: 'Udacity',
+      date: 'Issued in August 2021',
+      logo: require('../assets/badges/Udacity.jpeg'),
+      url: "https://confirm.udacity.com/MQ9EKKTF"
+    },
+    {
+      heading: 'Python for Data Science',
+      company: 'IBM',
+      date: 'Issued in August 2021',
+      logo: require('../assets/badges/Python_101_Data_Science.png'),
+      url: "https://www.credly.com/badges/a3ff20b3-a374-4a1e-8685-8d7aa4f5e399/public_url"
+    },
+    {
+      heading: 'Data Science Foundations',
+      company: 'IBM',
+      date: 'Issued in August 2021',
+      logo: require('../assets/badges/Data_Sci_Found.png'),
+      url: "https://www.credly.com/badges/d8ff49d0-5167-4922-b6cb-8859e7a6afba/public_url"
+    },
+    {
+      heading: 'Data Science Tools',
+      company: 'IBM',
+      date: 'Issued in August 2021',
+      logo: require('../assets/badges/Big_Data_Found.png'),
+      url: "https://www.credly.com/badges/050addf6-31b6-4371-9261-0c9963fe9594/public_url"
+    },
+    {
+      heading: 'Big Data Foundations',
+      company: 'IBM',
+      date: 'Issued in August 2021',
+      logo: require('../assets/badges/Quantum_Conversations.png'),
+      url: "https://www.credly.com/badges/b1f7d555-59d3-4253-8398-e4c7837100f9/public_url"
+    },
+    {
+      heading: 'Docker Essentials',
+      company: 'IBM',
+      date: 'Issued in January 2022',
+      logo: require('../assets/badges/Docker_Essentials.png'),
+      url: "https://www.credly.com/badges/6d01de6e-a7ca-4f39-8161-52b246b36f50/public_url"
+    },
+    {
+      heading: 'Watson Studio Essentials',
+      company: 'IBM',
+      date: 'Issued in October 2021',
+      logo: require('../assets/badges/Watson_Studio_Essentials.png'),
+      url: "https://www.credly.com/earner/earned/badge/35b268ce-b043-4745-934c-cbf5b7293336"
+    },
+    {
+      heading: 'Enterprise Design Thinking - Practitioner',
+      company: 'IBM',
+      date: 'Issued in October 2021',
+      logo: require('../assets/badges/Practitioner.png'),
+      url: "https://www.credly.com/badges/b036c68c-af6e-4928-8e54-01d99edaad49/public_url"
+    },
+    {
+      heading: 'Enterprise Design Thinking - Team Essentials',
+      company: 'IBM',
+      date: 'Issued in October 2021',
+      logo: require('../assets/badges/Team_Essentials.png'),
+      url: "https://www.credly.com/badges/b7ef6b04-37e0-4c07-82d1-c3e1d61ce52c/public_url"
+    }
+  ],
+}
 
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, certificates };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, badges };
