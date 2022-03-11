@@ -1,6 +1,7 @@
 // Navigation Bar SECTION
 const navBar = {
   show: true,
+
 };
 
 // Main Body SECTION

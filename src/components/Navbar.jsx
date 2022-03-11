@@ -11,11 +11,10 @@ const Navigation = React.forwardRef((props, ref) => {
   const [isTop, setIsTop] = useState(true);
   const navbarMenuRef = React.useRef();
   const navbarDimensions = useResizeObserver(navbarMenuRef);
-  const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
-
 
   return (
     <Navbar
+      variant="dark"
       ref={navbarMenuRef}
       className={` fixed-top  ${ "navbar-transparent"
       }`}

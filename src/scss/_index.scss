@@ -40,7 +40,7 @@ code {
 }
 
 .background-transparent{
-  backgroud: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0))
+  background-color: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0))
 }
 
 .navbar-transparent {
@@ -48,6 +48,7 @@ code {
   transition: background-color 0.2s;
   
 }
+
 
 .brand {
   color: #ffffff !important;
@@ -109,12 +110,11 @@ code {
 }
 
 .card {
-  
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.5s, box-shadow 0.5s;
   &:hover {
-    box-shadow: 0 2rem 3rem rgba($white, 0.3) !important;
-    transform: translateY(-2px);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1.2rem 2rem rgba($white, 0.2) !important;
+    transform: translateY(-3px);
+    transition: transform 0.5s, box-shadow 0.5s;
   }
 }
 
@@ -126,15 +126,14 @@ code {
   color: rgba(255, 255, 255, 0.726);
 }
 
-.skills-tabs {
-  flex-grow: 1;
-  color: #46257d;
-}
 
 .skills-tab {
   flex-grow: 1;
   text-align: center;
   color: #46257d;
+  &:hover{
+    color: #2d1455;
+  }
 }
 
 .progress {
@@ -142,6 +141,10 @@ code {
   & > * {
     transform: scaleX(0);
   }
+}
+
+#card{
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 #empty{
@@ -176,4 +179,8 @@ code {
 
 #basic-navbar-nav {
   font-weight: bold;
+}
+
+#tog{
+  color: #fff;
 }
