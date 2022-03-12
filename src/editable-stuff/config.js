@@ -208,6 +208,34 @@ const badges = {
       date: 'Issued in October 2021',
       logo: require('../assets/badges/Team_Essentials.png'),
       url: "https://www.credly.com/badges/b7ef6b04-37e0-4c07-82d1-c3e1d61ce52c/public_url"
+    },
+    {
+      heading: 'The IBM Way',
+      company: 'IBM',
+      date: 'Issued in August 2021',
+      logo: require('../assets/badges/the-ibm-way.png'),
+      url: "https://www.credly.com/badges/72e94746-d8cc-4016-86a6-443a9d5065a2/public_url"
+    },
+    {
+      heading: 'Agile Explorer',
+      company: 'IBM',
+      date: 'Issued in August 2021',
+      logo: require('../assets/badges/ibm-agile-explorer.png'),
+      url: "https://www.credly.com/badges/4624287e-b071-44ae-8c8f-935843be1a7a/public_url"
+    },
+    {
+      heading: 'Garage Essentials',
+      company: 'IBM',
+      date: 'Issued in September 2021',
+      logo: require('../assets/badges/ibm-garage-essentials.png'),
+      url: "https://www.credly.com/badges/5e2d861a-3e4a-4efd-9c99-db511b12fcd2/public_url"
+    },
+    {
+      heading: 'Enterprise Design Thinking - Team Essentials',
+      company: 'IBM',
+      date: 'Issued in October 2021',
+      logo: require('../assets/badges/Team_Essentials.png'),
+      url: "https://www.credly.com/badges/b7ef6b04-37e0-4c07-82d1-c3e1d61ce52c/public_url"
     }
   ],
 }
