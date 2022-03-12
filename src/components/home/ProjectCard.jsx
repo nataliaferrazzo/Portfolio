@@ -3,8 +3,9 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
+import { CardImg } from "react-bootstrap";
 
-const ProjectCard = ({ value }) => {
+const ProjectCard = ({ value, image }) => {
   const {
     name,
     description,
@@ -15,10 +16,11 @@ const ProjectCard = ({ value }) => {
   } = value;
   return (
     <Col md={6}>
-      <Card id="card" className="card shadow p-3 mb-5 rounded text-white">
+      <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items-center">
+        <CardImg src={image} variant="top" height={300} alt=" " />
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description)?"":description || <Skeleton count={3} />} </Card.Text>
+          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
@@ -37,6 +39,7 @@ const ProjectCard = ({ value }) => {
   );
 };
 
+
 const CardButtons = ({ svn_url }) => {
   return (
     <>
@@ -46,7 +49,8 @@ const CardButtons = ({ svn_url }) => {
       >
         <i className="fab fa-github" /> Clone Project
       </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary">
+      <a // For a Repo Button, descomment
+        href={svn_url} target=" _blank" className="btn btn-outline-secondary">
         <i className="fab fa-github" /> Repo
       </a>
     </>
@@ -81,16 +85,16 @@ const Language = ({ languages_url, repo_url }) => {
       Languages:{" "}
       {array.length
         ? array.map((language) => (
-            <a
-              key={language} 
-              className="badge badge-light card-link"
-              href={repo_url + `/search?l=${language}`}
-              target=" _blank"
-            >
-              {language}:{" "}
-              {Math.trunc((data[language] / total_count) * 1000) / 10} %
-            </a>
-          ))
+          <a
+            key={language}
+            className="badge badge-light card-link"
+            href={repo_url + `/search?l=${language}`}
+            target=" _blank"
+          >
+            {language}:{" "}
+            {Math.trunc((data[language] / total_count) * 1000) / 10} %
+          </a>
+        ))
         : "code yet to be deployed."}
     </div>
   );

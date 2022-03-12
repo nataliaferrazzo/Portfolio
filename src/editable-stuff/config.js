@@ -44,6 +44,7 @@ const repos = {
   gitHubUsername: "nataliaferrazzo", //i.e."johnDoe12Gh"
   reposLength: 0,
   specificRepos: ["qiskit", "qopt"],
+  img: require("/Users/nataliaferrazzo/GitHub/Portfolio/src/assets/img/code1.png")
 };
 
 // Certificate SECTION
@@ -104,6 +105,7 @@ const getInTouch = {
   email: "nataliaferrazzo@hotmail.com",
 };
 
+//para adicionar nova experiência adicionar aqui as principais infos e criar um arquivo .jsx para a nova url
 const experiences = {
   show: true,
   heading: "Professional Experiences",
@@ -123,6 +125,8 @@ const experiences = {
   ]
 }
 
+
+// para adicionar novo badge é necessário apenas adicionar as infos aqui
 const badges = {
   show: true,
   heading: "Certificates and Badges",

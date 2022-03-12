@@ -67,13 +67,11 @@ const About = React.forwardRef((props, ref) => {
 const Exp = React.forwardRef((props, ref) => {
   return (
     <>
-      {
-        experiences.show && (
+      {experiences.show && (
           <Experience experiences={experiences} />
         )
       }
-      {
-        badges.show && (
+      {badges.show && (
           <Badge badges={badges} />
       )
       }
@@ -105,6 +103,7 @@ const Proj = React.forwardRef((props, ref) => {
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
+          imag={repos.img}
         />
       )}
 
