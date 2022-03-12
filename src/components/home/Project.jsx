@@ -57,23 +57,24 @@ const Project = ({ heading, username, length, specfic }) => {
   return (
     <Jumbotron fluid id="projects" className="bg-transparent m-0">
       <Container className="">
+        <div id="empty3"></div>
         <h2 className="display-4 pb-5 text-center text-title">{heading}</h2>
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
-                <ProjectCard
-                  key={`project-card-${index}`}
-                  id={`project-card-${index}`}
-                  value={project}
-                />
-              ))
+              <ProjectCard
+                key={`project-card-${index}`}
+                id={`project-card-${index}`}
+                value={project}
+              />
+            ))
             : dummyProjectsArr.map((project, index) => (
-                <ProjectCard
-                  key={`dummy-${index}`}
-                  id={`dummy-${index}`}
-                  value={project}
-                />
-              ))}
+              <ProjectCard
+                key={`dummy-${index}`}
+                id={`dummy-${index}`}
+                value={project}
+              />
+            ))}
         </Row>
       </Container>
     </Jumbotron>

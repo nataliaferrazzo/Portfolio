@@ -112,11 +112,13 @@ const experiences = {
       role: 'Developer Intern',// Here Add Company Name
       companylogo: require('../assets/img/IBM.png'),
       date: 'Aug 2021 – Present',
+      url: "/IBM"
     },
     {
       role: 'Assistant Data Scientist',
       companylogo: require('../assets/img/cadastra.png'),
       date: 'Nov 2020 – Aug 2021',
+      url: "/cadastra"
     },
   ]
 }

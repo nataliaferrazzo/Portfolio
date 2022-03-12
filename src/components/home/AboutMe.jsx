@@ -47,11 +47,11 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
               />
             )}
           </div>
-          <div id="empty3" className="d-lg-none"></div>
+          <div id="empty4" className="d-lg-none"></div>
           <div className={`col-lg-${showPic ? "7" : "12"}`}>
             <h2 className="display-4 mb-5 text-center text-title">{heading}</h2>
             <p className="lead text-center text">{message}</p>
-            <div id="empty3"></div>
+            <div id="empty4"></div>
             {resume && (
               <p className="lead text-center">
                 <a

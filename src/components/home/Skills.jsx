@@ -20,7 +20,7 @@ function Skills({ heading, hardSkills, softSkills }) {
   );
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-transparent m-0" id="skills">
-      <Container className="p-5 ">
+      <Container className="p-0">
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center text-title">
           {heading}
         </h2>

@@ -1,24 +1,26 @@
 import React from 'react';
 
-import { 
+import {
     Col,
     Card
- } from "react-bootstrap";
- 
-const ExperienceCard = ({data}) => {
-    return ( 
+} from "react-bootstrap";
+
+const ExperienceCard = ({ data }) => {
+    return (
         <Col lg="6">
             <div className="pb-5 text-center">
-                <img className=" bg-white mb-3" src={data.companylogo} alt=""/>
+                <a href={data.url} target="_blank">
+                    <img className=" bg-white mb-3" src={data.companylogo} alt="" />
+                </a>
                 <p className="lead">
                     {data.role}
-                    <br/>
+                    <br />
                     {data.date}
                 </p>
-                
+
             </div>
         </Col>
-     );
+    );
 }
- 
+
 export default ExperienceCard;
