@@ -42,8 +42,8 @@ const repos = {
   show: true,
   heading: "Git Projects",
   gitHubUsername: "nataliaferrazzo", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 0,
+  specificRepos: ["qiskit", "qopt"],
 };
 
 // Certificate SECTION
