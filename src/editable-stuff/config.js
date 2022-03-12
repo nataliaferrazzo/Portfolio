@@ -140,6 +140,13 @@ const badges = {
       url: "https://www.credly.com/badges/867214af-e828-4529-8b3c-2e11231a8334/public_url"
     },
     {
+      heading: 'AWS Cloud Practitioner Essentials',
+      company: 'Amazon Web Services',
+      date: 'Issued in December 2021',
+      logo: require('../assets/badges/AWS.jpeg'),
+      url: require("../assets/badges/AWS.pdf")
+    },
+    {
       heading: 'Watson Hands-On',
       company: 'IBM',
       date: 'Issued in September 2021',
@@ -150,7 +157,7 @@ const badges = {
       heading: 'Machine Learning Foundations',
       company: 'Udacity',
       date: 'Issued in August 2021',
-      logo: require('../assets/badges/Udacity.jpeg'),
+      logo: require('../assets/badges/Udacity.png'),
       url: "https://confirm.udacity.com/MQ9EKKTF"
     },
     {
@@ -231,11 +238,74 @@ const badges = {
       url: "https://www.credly.com/badges/5e2d861a-3e4a-4efd-9c99-db511b12fcd2/public_url"
     },
     {
-      heading: 'Enterprise Design Thinking - Team Essentials',
+      heading: 'Watson Assistant Foundations',
+      company: 'IBM',
+      date: 'Issued in September 2021',
+      logo: require('../assets/badges/watson-assistant-foundations.png'),
+      url: "https://www.credly.com/badges/ecf64c38-b4e5-48bd-8ac7-24216cecfa09/public_url"
+    },
+    {
+      heading: 'Watson Assistant Methodology',
+      company: 'IBM',
+      date: 'Issued in September 2021',
+      logo: require('../assets/badges/watson-assistant-methodology.png'),
+      url: "https://www.credly.com/badges/ba30cb59-a724-4ff8-a86f-3566c48a6e7c/public_url"
+    },
+    {
+      heading: 'Watson Studio Dashboard Essentials',
       company: 'IBM',
       date: 'Issued in October 2021',
-      logo: require('../assets/badges/Team_Essentials.png'),
-      url: "https://www.credly.com/badges/b7ef6b04-37e0-4c07-82d1-c3e1d61ce52c/public_url"
+      logo: require('../assets/badges/ibm-watson-studio-dashboard-essentials.png'),
+      url: "https://www.credly.com/badges/35f9789b-c22e-4c90-9978-4e2f0e81ace2/public_url"
+    },
+    {
+      heading: 'Delivering Business Value',
+      company: 'IBM',
+      date: 'Issued in December 2021',
+      logo: require('../assets/badges/ibm-consulting-delivering-business-value.png'),
+      url: "https://www.credly.com/badges/775a5e71-7e6b-40b0-bb89-8fe7e21bf130/public_url"
+    },
+    {
+      heading: 'Build Your Own Chatbot',
+      company: 'IBM',
+      date: 'Issued in October 2021',
+      logo: require('../assets/badges/build-your-own-chatbot-level-1.png'),
+      url: "https://www.credly.com/badges/fc37997d-e4d8-4b0d-b3b5-97d64014d7bb/public_url"
+    },
+    {
+      heading: 'Javascript for Beginners',
+      company: 'Udemy',
+      date: 'Issued in March 2022',
+      logo: require('../assets/badges/udemy.png'),
+      url: "https://www.udemy.com/certificate/UC-0e948ed8-b725-499e-8edf-f757e7b5a08d/"
+    },
+    {
+      heading: 'Modern Javascript',
+      company: 'Udemy',
+      date: 'Issued in February 2022',
+      logo: require('../assets/badges/udemy.png'),
+      url: "https://www.udemy.com/certificate/UC-8cb290f1-eaeb-4eb8-bf29-6df4097285cf/"
+    },
+    {
+      heading: 'Node.js Developer',
+      company: 'Udemy',
+      date: 'Issued in March 2022',
+      logo: require('../assets/badges/udemy.png'),
+      url: "https://www.udemy.com/certificate/UC-e546567a-7993-4b50-b7d0-65bdc2af2c4b/"
+    },
+    {
+      heading: 'Docker and Kubernetes',
+      company: 'Udemy',
+      date: 'Issued in December 2021',
+      logo: require('../assets/badges/udemy.png'),
+      url: "https://www.udemy.com/certificate/UC-47d96e19-fd7f-4e20-9710-987ec229ba18/"
+    },
+    {
+      heading: 'Serveless Framework Bootcamp',
+      company: 'Udemy',
+      date: 'Issued in March 2022',
+      logo: require('../assets/badges/udemy.png'),
+      url: "https://www.udemy.com/certificate/UC-58b0350e-af21-47c5-8db6-33d045a6f00c"
     }
   ],
 }
