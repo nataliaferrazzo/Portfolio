@@ -43,8 +43,8 @@ const repos = {
   heading: "Git Projects",
   gitHubUsername: "nataliaferrazzo", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["qiskit", "qopt"],
-  img: require("/Users/nataliaferrazzo/GitHub/Portfolio/src/assets/img/code1.png")
+  specificRepos: ["qiskit", "qopt", "QIEDA"],
+  img: "https://github.com/nataliaferrazzo/Portfolio/blob/main/src/assets/img/code"
 };
 
 // Certificate SECTION

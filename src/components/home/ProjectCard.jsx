@@ -4,8 +4,10 @@ import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
 import { CardImg } from "react-bootstrap";
+import { array } from "prop-types";
 
-const ProjectCard = ({ value, image }) => {
+
+const ProjectCard = ({ value, image, ind }) => {
   const {
     name,
     description,
@@ -15,9 +17,9 @@ const ProjectCard = ({ value, image }) => {
     pushed_at,
   } = value;
   return (
-    <Col md={6}>
+    <Col md={4}>
       <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items-center">
-        <CardImg src={image} variant="top" height={300} alt=" " />
+        <CardImg src={image + ind + ".png"} variant="top" height={200} alt=" " />
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
