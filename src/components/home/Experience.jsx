@@ -12,10 +12,10 @@ const Experience = ({experiences}) => {
         <div id="empty3"></div>
             <Container>
                 <Jumbotron fluid className="bg-black">
-                    <h2 className="display-4 mb-5 text-center text-title">
+                    <h2 className="display-6 pb-3 text-right text-title category border border-top-0 border-right-0 border-left-0 border-secondary">
                         {experiences.heading}
                     </h2>
-                    <Row className="text">
+                    <Row className="text pt-5">
                         {
                             experiences.data.map(data => {
                                 return <ExperienceCard key={data.company} data={data} />

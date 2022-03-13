@@ -21,11 +21,11 @@ function Skills({ heading, hardSkills, softSkills }) {
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-transparent m-0" id="skills">
       <Container className="p-0">
-        <h2 ref={skillsTabRef} className="display-4 pb-5 text-center text-title">
+        <h2 ref={skillsTabRef} className="display-6 pb-3 text-right text-title category border border-top-0 border-right-0 border-left-0 border-secondary">
           {heading}
         </h2>
         <Tabs
-          className="skills-tabs"
+          className="skills-tabs pt-3"
           defaultActiveKey="hard-skills"
           id="skills-tabs"
         >
