@@ -59,7 +59,7 @@ const Project = ({ heading, username, length, specfic, imag }) => {
         <h2 className="display-6 pb-3 pt-5 text-right text-title category border border-top-0 border-right-0 border-left-0 border-secondary mb-5">{heading}</h2>
         <Row>
           {projectsArray.length
-            ? projectsArray.map((project, index) => (
+            ? projectsArray.map((project, index, imag) => (
               <ProjectCard
                 key={`project-card-${index}`}
                 id={`project-card-${index}`}
@@ -68,7 +68,7 @@ const Project = ({ heading, username, length, specfic, imag }) => {
                 ind={index}
               />
             ))
-            : dummyProjectsArr.map((project, index) => (
+            : dummyProjectsArr.map((project, index, imag) => (
               <ProjectCard
                 key={`dummy-${index}`}
                 id={`dummy-${index}`}

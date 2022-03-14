@@ -44,7 +44,6 @@ const repos = {
   gitHubUsername: "nataliaferrazzo", //i.e."johnDoe12Gh"
   reposLength: 0,
   specificRepos: ["qiskit", "qopt", "QIEDA"],
-  img: "https://github.com/nataliaferrazzo/Portfolio/blob/main/src/assets/img/code"
 };
 
 // Certificate SECTION
