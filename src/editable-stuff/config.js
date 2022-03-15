@@ -46,6 +46,38 @@ const repos = {
   specificRepos: ["qiskit", "qopt", "QIEDA"],
 };
 
+const academic = {
+  show: true,
+  heading: "Academic Projects",
+  data: [
+    {
+      title: 'Developer Intern',
+      pagename: 'nome',
+      image: require('../assets/img/IBM.png'),
+      message: 'blablablablaba',
+      date: 'Aug 2021 – Present'
+    },
+    {
+      title: 'Developer Intern',
+      pagename: 'nome',
+      image: require('../assets/img/IBM.png'),
+      date: 'Aug 2021 – Present'
+    },
+    {
+      title: 'Developer Intern',
+      pagename: 'nome',
+      image: require('../assets/img/IBM.png'),
+      date: 'Aug 2021 – Present'
+    },
+    {
+      title: 'Developer Intern',
+      pagename: 'nome',
+      image: require('../assets/img/IBM.png'),
+      date: 'Aug 2021 – Present'
+    }
+  ]
+
+}
 // Certificate SECTION
 const leadership = {
   show: false,
@@ -320,4 +352,4 @@ const badges = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, badges };
+export { navBar, mainBody, about, academic, repos, skills, leadership, getInTouch, experiences, badges };

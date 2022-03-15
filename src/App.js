@@ -4,6 +4,7 @@ import {
   navBar,
   mainBody,
   about,
+  academic,
   repos,
   leadership,
   skills,
@@ -25,6 +26,7 @@ import Experience from "./components/home/Experience";
 import { Switch } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Badge from "./components/home/Badge.jsx";
+import Academic from "./components/home/Academic.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -68,11 +70,11 @@ const Exp = React.forwardRef((props, ref) => {
   return (
     <>
       {experiences.show && (
-          <Experience experiences={experiences} />
-        )
+        <Experience experiences={experiences} />
+      )
       }
       {badges.show && (
-          <Badge badges={badges} />
+        <Badge badges={badges} />
       )
       }
       {leadership.show && (
@@ -97,6 +99,12 @@ const Exp = React.forwardRef((props, ref) => {
 const Proj = React.forwardRef((props, ref) => {
   return (
     <>
+      {academic.show && (
+        <Academic
+          heading={academic.heading}
+          data={academic.data}
+        />
+      )}
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -106,7 +114,6 @@ const Proj = React.forwardRef((props, ref) => {
           imag={repos.img}
         />
       )}
-
     </>
   );
 });
@@ -121,7 +128,6 @@ const Cont = React.forwardRef((props, ref) => {
           email={getInTouch.email}
         />
       )}
-
     </>
   );
 });

@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
 
+
 const dummyProject = {
   name: null,
   description: null,
@@ -16,7 +17,7 @@ const dummyProject = {
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 
-const Project = ({ heading, username, length, specfic, imag }) => {
+const Project = ({ heading, username, length, specfic, message }) => {
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
   const dummyProjectsArr = new Array(length + specfic.length).fill(
@@ -55,29 +56,28 @@ const Project = ({ heading, username, length, specfic, imag }) => {
 
   return (
     <Jumbotron fluid id="projects" className="bg-transparent">
-      <Container className="pt-5">
+      <Container className="pt-4">
         <h2 className="display-6 pb-3 pt-5 text-right text-title category border border-top-0 border-right-0 border-left-0 border-secondary mb-5">{heading}</h2>
         <Row>
           {projectsArray.length
-            ? projectsArray.map((project, index, imag) => (
+            ? projectsArray.map((project, index) => (
               <ProjectCard
                 key={`project-card-${index}`}
                 id={`project-card-${index}`}
                 value={project}
-                image={imag}
                 ind={index}
               />
             ))
-            : dummyProjectsArr.map((project, index, imag) => (
+            : dummyProjectsArr.map((project, index) => (
               <ProjectCard
                 key={`dummy-${index}`}
                 id={`dummy-${index}`}
                 value={project}
-                image={imag}
                 ind={index}
               />
             ))}
         </Row>
+        <h5 className="display-9 text"> Please, note that these are repositories that I am or have been working on. They are not necessarily my own authority.  </h5>
       </Container>
     </Jumbotron>
   );
