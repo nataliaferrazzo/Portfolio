@@ -65,7 +65,7 @@ const academic = {
       title: 'Ginzburg-Landau Theory Applied to Anderson\'s Limit',
       subject: 'Physics',
       image: require('../assets/projects/images/ginzburg-landau.png'),
-      message: 'What is the minimun size of a Super-conductor? In this summer-vacation project, it was tried to answer this question by applying Ginzburg-Landau Theory and Numerical Methods.',
+      message: 'What is the minimum size of a superconductor? In this summer-vacation project, it was tried to answer this question by applying Ginzburg-Landau Theory and Numerical Methods.',
       paper: require('../assets/projects/physics/ginzburg-landau.pdf')
     },
     {
