@@ -16,13 +16,13 @@ const ProjectCard = ({ value, ind }) => {
   } = value;
   return (
     <Col md={4}>
-      <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items-center">
+      <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items- ">
         <a class="card-block stretched-link text-decoration-none" href={svn_url} target=" _blank" className="btn">
           <ImageCard number={ind} />
         </a>
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
+          <Card.Text className="text-justify">{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
@@ -51,10 +51,10 @@ const CardButtons = ({ svn_url }) => {
       >
         <i className="fab fa-github" /> Clone Project
       </a>
-      <a // For a Repo Button, descomment
+{/*   <a // For a Repo Button, descomment
         href={svn_url} target=" _blank" className="btn btn-outline-secondary">
         <i className="fab fa-github" /> Repo
-      </a>
+      </a> */}
     </>
   );
 };

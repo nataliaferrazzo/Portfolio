@@ -16,6 +16,7 @@ const Academic = ({ heading, data }) => {
             })
           }
         </Row>
+
       </Container>
     </Jumbotron>
   );

@@ -8,24 +8,24 @@ const AcademicCard = ({ data }) => {
   const {
     title,
     message,
-    pagename,
-    date,
+    paper,
+    subject,
     image
   } = data
 
   return (
     <Col md={4}>
       <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items-center">
-        <a class="card-block stretched-link text-decoration-none" href={`./projects/${pagename}`} target=" _blank" className="btn">
+        <a class="card-block stretched-link text-decoration-none" href={paper} target=" _blank" 
+                  rel="noreferrer noopener" className="btn">
           <CardImg src={image} />
         <Card.Body>
-          <Card.Title className=" text-white" as="h5">{title}</Card.Title>
-          <Card.Text className="text">{message} </Card.Text>
+          <Card.Title className="text-white" as="h5">{title}</Card.Title>
+          <Card.Text className="text text-justify">{message} </Card.Text>
           <hr />
           <p className="card-text">
             <span className="text-dark card-link mr-4">
-              Date:{" "}
-              <span className="badge badge-dark">{date}</span>
+              <span className="badge badge-dark">{subject}</span>
             </span>
           </p>
         </Card.Body>

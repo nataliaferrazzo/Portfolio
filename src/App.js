@@ -122,7 +122,7 @@ const Proj = React.forwardRef((props, ref) => {
   );
 });
 
-const Ibm =  React.forwardRef((props, ref) => {
+const Ibm = React.forwardRef((props, ref) => {
   return (
     <>
       {ibm.show && (
@@ -135,7 +135,7 @@ const Ibm =  React.forwardRef((props, ref) => {
   );
 });
 
-const Cadastra =  React.forwardRef((props, ref) => {
+const Cadastra = React.forwardRef((props, ref) => {
   return (
     <>
       {cadastra.show && (

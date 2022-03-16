@@ -55,33 +55,30 @@ const academic = {
   heading: "Academic Projects",
   data: [
     {
-      title: 'Developer Intern',
-      pagename: 'nome',
-      image: require('../assets/img/IBM.png'),
-      message: 'blablablablaba',
-      date: 'Aug 2021 – Present'
+      title: 'Monte Carlo',
+      subject: 'Numerical Methods',
+      image: require('../assets/projects/images/monte-carlo.png'),
+      message: 'In this assignment, the Monte Carlo method was studied, discussed and applied together with Markov Chain to estimate Pi value.',
+      paper: require('../assets/projects/numerical/monte-carlo.pdf')
     },
     {
-      title: 'Developer Intern',
-      pagename: 'nome',
-      image: require('../assets/img/IBM.png'),
-      date: 'Aug 2021 – Present'
+      title: 'Ginzburg-Landau Theory Applied to Anderson\'s Limit',
+      subject: 'Physics',
+      image: require('../assets/projects/images/ginzburg-landau.png'),
+      message: 'What is the minimun size of a Super-conductor? In this summer-vacation project, it was tried to answer this question by applying Ginzburg-Landau Theory and Numerical Methods.',
+      paper: require('../assets/projects/physics/ginzburg-landau.pdf')
     },
     {
-      title: 'Developer Intern',
-      pagename: 'nome',
-      image: require('../assets/img/IBM.png'),
-      date: 'Aug 2021 – Present'
-    },
-    {
-      title: 'Developer Intern',
-      pagename: 'nome',
-      image: require('../assets/img/IBM.png'),
-      date: 'Aug 2021 – Present'
+      title: 'Linear Regression',
+      subject: 'Numerical Methods',
+      image: require('../assets/projects/images/linear-regression.png'),
+      message: 'This assignment was implemented to find the best fit curve - with, at most, a second order equation - for the provided data.',
+      paper: require('../assets/projects/numerical/linear-regression.pdf')
     }
   ]
-
 }
+
+
 // Certificate SECTION
 const leadership = {
   show: false,
