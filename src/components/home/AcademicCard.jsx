@@ -16,11 +16,11 @@ const AcademicCard = ({ data }) => {
   return (
     <Col md={4}>
       <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items-center">
-        <a href={`./projects/{pagename}`}>
-          <CardImg src={image} /></a>
+        <a class="card-block stretched-link text-decoration-none" href={`./projects/${pagename}`} target=" _blank" className="btn">
+          <CardImg src={image} />
         <Card.Body>
-          <Card.Title as="h5">{title}</Card.Title>
-          <Card.Text>{message} </Card.Text>
+          <Card.Title className=" text-white" as="h5">{title}</Card.Title>
+          <Card.Text className="text">{message} </Card.Text>
           <hr />
           <p className="card-text">
             <span className="text-dark card-link mr-4">
@@ -29,6 +29,7 @@ const AcademicCard = ({ data }) => {
             </span>
           </p>
         </Card.Body>
+        </a>
       </Card>
     </Col>
   );

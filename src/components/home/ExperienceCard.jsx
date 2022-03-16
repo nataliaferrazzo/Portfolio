@@ -8,10 +8,10 @@ import {
 const ExperienceCard = ({ data }) => {
     return (
         <Col>
-            <Card id="card" className="card shadow p-4 mb-5 rounded text-white justify-content-center align-items-center">
-                <div className="pt-4 pb-4 text-center">
-                    <a href={data.url}>
-                        <img className="bg-white mb-3" src={data.companylogo} alt="" />
+            <Card id="card" className="card shadow p-4 mb-5 rounded text-white">
+                <div className="p-2 text-center">
+                    <a class="card-block stretched-link text-decoration-none" href={data.url}>
+                        <img className="mb-2" src={data.companylogo} alt="" height={100} />
                     </a>
                     <p className="lead">
                         {data.role}

@@ -17,8 +17,9 @@ const ProjectCard = ({ value, ind }) => {
   return (
     <Col md={4}>
       <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items-center">
-        <a href={svn_url} target=" _blank" className="btn">
-          <ImageCard number={ind} /></a>
+        <a class="card-block stretched-link text-decoration-none" href={svn_url} target=" _blank" className="btn">
+          <ImageCard number={ind} />
+        </a>
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
