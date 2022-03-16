@@ -5,19 +5,21 @@ import { useHistory } from "react-router-dom";
 
 
 export const Item = () => {
-    let history = useHistory();
-    return (
-        <>
-          <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-          <button type="button" class="btn btn-outline-light m-3" onClick={() => history.goBack()}><i class='fas fa-angle-left'></i></button>
-        </>
-    );
+  let history = useHistory();
+  return (
+    <>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <button type="button" class="btn btn-outline-light m-3 position-fixed top-0 start-100 translate-middle" id="right-panel-link" onClick={() => history.goBack()}><i class='fas fa-angle-left'></i></button>
+    </>
+  );
 };
 
 const IBM = ({ image }) => {
   return (
     <div id="IBM" className="jumbotron jumbotron-fluid pt-5">
-      <Item className="mr-3"/>
+      <div class="position-relative">
+        <Item />
+      </div>
       <img src={image} alt="logo" className="mx-auto d-block img-fluid m-5" height={"500px"} />
       <VerticalTimeline>
         <VerticalTimelineElement
