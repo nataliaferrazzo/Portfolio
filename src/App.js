@@ -17,7 +17,7 @@ import {
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 // import { Blog } from "./components/blog/Blog";
@@ -148,7 +148,7 @@ const Cadastra = React.forwardRef((props, ref) => {
   );
 })
 
-const Cont = React.forwardRef((props, ref) => {
+/*const Cont = React.forwardRef((props, ref) => {
   return (
     <>
       {getInTouch.show && (
@@ -160,7 +160,7 @@ const Cont = React.forwardRef((props, ref) => {
       )}
     </>
   );
-});
+});*/
 
 const App = () => {
   const titleRef = React.useRef();

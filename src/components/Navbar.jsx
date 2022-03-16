@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { useScrollPosition } from "../hooks/useScrollPosition";
-import useResizeObserver from "../hooks/useResizeObserver";
+import React from "react";
+//import { Link } from "react-router-dom";
+//import { useScrollPosition } from "../hooks/useScrollPosition";
+//import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
-  const [isTop, setIsTop] = useState(true);
+  //const [isTop, setIsTop] = useState(true);
   const navbarMenuRef = React.useRef();
-  const navbarDimensions = useResizeObserver(navbarMenuRef);
+  //const navbarDimensions = useResizeObserver(navbarMenuRef);
 
   return (
     <Navbar
