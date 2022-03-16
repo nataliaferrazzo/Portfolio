@@ -145,17 +145,26 @@ const experiences = {
       role: 'Developer Intern',// Here Add Company Name
       companylogo: require('../assets/img/IBM.png'),
       date: 'Aug 2021 – Present',
-      url: "/IBM"
+      url: "/experience/IBM"
     },
     {
       role: 'Assistant Data Scientist',
       companylogo: require('../assets/img/cadastra.png'),
       date: 'Nov 2020 – Aug 2021',
-      url: "/cadastra"
+      url: "/experience/cadastra"
     },
   ]
 }
 
+const ibm = {
+  show: true,
+  image: require('../assets/img/IBM.png')
+}
+
+const cadastra = {
+  show: true,
+  image: require('../assets/img/cadastra.png')
+}
 
 // para adicionar novo badge é necessário apenas adicionar as infos aqui
 const badges = {
@@ -352,4 +361,4 @@ const badges = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, academic, repos, skills, leadership, getInTouch, experiences, badges };
+export { navBar, mainBody, about, academic, repos, skills, leadership, getInTouch, experiences, badges, ibm, cadastra };

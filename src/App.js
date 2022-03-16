@@ -10,7 +10,9 @@ import {
   skills,
   getInTouch,
   experiences,
-  badges
+  badges,
+  ibm,
+  cadastra
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -27,6 +29,8 @@ import { Switch } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Badge from "./components/home/Badge.jsx";
 import Academic from "./components/home/Academic.jsx";
+import IBM from "./components/home/IBM.jsx";
+import CAD from "./components/home/CAD.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -118,6 +122,32 @@ const Proj = React.forwardRef((props, ref) => {
   );
 });
 
+const Ibm =  React.forwardRef((props, ref) => {
+  return (
+    <>
+      {ibm.show && (
+        <IBM
+          heading={ibm.heading}
+          image={ibm.image}
+        />
+      )}
+    </>
+  );
+});
+
+const Cadastra =  React.forwardRef((props, ref) => {
+  return (
+    <>
+      {cadastra.show && (
+        <IBM
+          heading={cadastra.heading}
+          image={cadastra.image}
+        />
+      )}
+    </>
+  );
+})
+
 const Cont = React.forwardRef((props, ref) => {
   return (
     <>
@@ -142,6 +172,8 @@ const App = () => {
         <Route path="/aboutme" exact component={() => <About />} />
         <Route path="/experience" exact component={() => <Exp ref={titleRef} />} />
         <Route path="/projects" exact component={() => <Proj />} />
+        <Route path="/experience/IBM" exact component={() => <Ibm />} />
+        <Route path="/experience/cadastra" exact component={() => <Cadastra />} />
       </Switch>
     </BrowserRouter>
   );

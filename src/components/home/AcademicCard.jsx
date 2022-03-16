@@ -16,7 +16,7 @@ const AcademicCard = ({ data }) => {
   return (
     <Col md={4}>
       <Card id="card" className="card shadow p-3 mb-5 rounded text-white justify-content-center align-items-center">
-        <a href={pagename}>
+        <a href={`./projects/{pagename}`}>
           <CardImg src={image} /></a>
         <Card.Body>
           <Card.Title as="h5">{title}</Card.Title>
