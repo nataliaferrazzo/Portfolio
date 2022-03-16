@@ -17,7 +17,7 @@ const MainBody = React.forwardRef(
       >
         <div className="static-gradient">
         <div id="stars"></div>
-        <Container className="text-center">
+        <Container className="text-center mt-5">
           <div id="empty"></div>
           <h1 ref={ref} className="display-3">
             {title}
@@ -39,14 +39,14 @@ const MainBody = React.forwardRef(
               </a>
             ))}
           </div>
-          <a
+{/*        <a
             className="btn btn-outline-light btn-lg "
             href="aboutme"
             role="button"
             aria-label="Learn more about me"
           >
             More about me
-          </a>
+            </a> */}
         </Container>
         </div>
       </Jumbotron>

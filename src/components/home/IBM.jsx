@@ -20,7 +20,7 @@ const IBM = ({ image }) => {
       <div class="position-absolute fixed-top">
         <Item />
       </div>
-      <img src={image} alt="logo" className="mx-auto d-block img-fluid m-5" height={"500px"} />
+      <img src={image} alt="logo" className="mx-auto d-block img-fluid m-5" width={200}/>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
