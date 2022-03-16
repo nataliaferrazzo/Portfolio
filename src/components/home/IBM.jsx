@@ -39,7 +39,7 @@ const IBM = ({ image }) => {
           dateClassName="text"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         >
-          <h5 className="vertical-timeline-element-title">Developer Intern</h5>
+          <h3 className="vertical-timeline-element-title">Developer Intern</h3>
           <p>
             <ul>
               <li>Development and debugging of e2e tests for AI chatbot,</li>
@@ -63,7 +63,8 @@ const IBM = ({ image }) => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-
+          date="Start: August 8th, 2021"
+          dateClassName="text"
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
         />
       </VerticalTimeline>

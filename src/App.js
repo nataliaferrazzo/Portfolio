@@ -139,7 +139,7 @@ const Cadastra =  React.forwardRef((props, ref) => {
   return (
     <>
       {cadastra.show && (
-        <IBM
+        <CAD
           heading={cadastra.heading}
           image={cadastra.image}
         />
