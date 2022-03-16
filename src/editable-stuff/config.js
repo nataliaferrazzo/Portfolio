@@ -19,6 +19,10 @@ const mainBody = {
     {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/nataliaferrazzo/",
+    },,
+    {
+      image: "fa-envelope",
+      url: "nataliaferrazzo@hotmail.com",
     }
   ],
 };

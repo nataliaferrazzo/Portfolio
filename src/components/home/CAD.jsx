@@ -1,11 +1,23 @@
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { useHistory } from "react-router-dom";
+
+export const Item = () => {
+  let history = useHistory();
+  return (
+    <>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <button type="button" class="btn btn-outline-light m-3" onClick={() => history.goBack()}><i class='fas fa-angle-left'></i></button>
+    </>
+  );
+};
 
 
 const CAD = ({ image }) => {
   return (
     <div id="CAD" className="jumbotron jumbotron-fluid pt-5">
+      <Item className="mr-3" />
       <img src={image} alt="logo" className="mx-auto d-block img-fluid m-5" height={"500px"} />
       <VerticalTimeline>
         <VerticalTimelineElement

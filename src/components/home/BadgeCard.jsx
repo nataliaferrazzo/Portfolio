@@ -8,7 +8,7 @@ import {
 const BadgeCard = ({ data }) => {
     return (
         <Col lg="3" md="3" sm="4s">
-            <div className="pb-4 text-center">
+            <div className="pb-3 text-center">
                 <a href={data.url} target="_blank">
                     <img
                         className="bg-white mb-1"
@@ -19,13 +19,8 @@ const BadgeCard = ({ data }) => {
                     />
                 </a>
                 <p className="lead">
-                    {data.heading}
+                    <h5>{data.heading}</h5>
                     <br />
-                    <small> 
-                    {data.company}
-                    <br />
-                    {data.date}
-                    </small>
                 </p>
             </div>
         </Col>
