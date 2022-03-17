@@ -69,6 +69,27 @@ const academic = {
       paper: require('./projects/physics/ginzburg-landau.pdf')
     },
     {
+      title: 'Photon Counting and Statistics',
+      subject: 'Physics',
+      image: require('./projects/images/photon-count.png'),
+      message: 'A photodetector circuit was built implementing a reversed polarized LED connected to an Arduino protoboard. A statistical study was carried out on the counts.',
+      paper: require('./projects/physics/photon-count.pdf')
+    },
+    {
+      title: 'Wealth distribution agents model',
+      subject: 'Numerical Methods',
+      image: require('./projects/images/wealth-distribution.png'),
+      message: 'In this report, we used Monte Carlo and studied the time evaluation for two models of systems: With social protection and without.',
+      paper: require('./projects/numerical/wealth-distribution.pdf')
+    },
+    {
+      title: 'Fitzhugh-Nagumo model for the action potential in neuron',
+      subject: 'Physics',
+      image: require('./projects/images/fitzhugh-nagumo.png'),
+      message: 'We applied and studied FTCS, BTCS and Crank-Nicolson models to represent the physiological pulse of neurons',
+      paper: require('./projects/numerical/fitzhugh-nagumo.pdf')
+    },
+    {
       title: 'Linear Regression',
       subject: 'Numerical Methods',
       image: require('./projects/images/linear-regression.png'),
