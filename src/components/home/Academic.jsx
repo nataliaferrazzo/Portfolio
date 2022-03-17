@@ -4,7 +4,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 import AcademicCard from "./AcademicCard";
 
-const Academic = ({ heading, data }) => {
+const Academic = ({ heading, data, message }) => {
   return (
     <Jumbotron fluid id="academics" className="bg-transparent">
       <Container className="pt-4">
@@ -16,7 +16,7 @@ const Academic = ({ heading, data }) => {
             })
           }
         </Row>
-
+        <h6 className="display-9 text"> {message} </h6>
       </Container>
     </Jumbotron>
   );

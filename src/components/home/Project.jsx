@@ -77,7 +77,7 @@ const Project = ({ heading, username, length, specfic, message }) => {
               />
             ))}
         </Row>
-        <h5 className="display-9 text"> Please, note that these are repositories that I am or have been working on. They are not necessarily my own authority.  </h5>
+        <h6 className="display-9 text"> {message}  </h6>
       </Container>
     </Jumbotron>
   );

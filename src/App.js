@@ -107,6 +107,7 @@ const Proj = React.forwardRef((props, ref) => {
         <Academic
           heading={academic.heading}
           data={academic.data}
+          message={academic.message}
         />
       )}
       {repos.show && (
@@ -116,6 +117,7 @@ const Proj = React.forwardRef((props, ref) => {
           length={repos.reposLength}
           specfic={repos.specificRepos}
           imag={repos.img}
+          message={repos.message}
         />
       )}
     </>
