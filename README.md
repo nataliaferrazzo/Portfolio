@@ -1,4 +1,12 @@
-<!-- npm run build
+<!-- Para visualizar no localHost:
+      npm run build
+      npm start
+
+      Para deploiar:
+      git add .
+      git commit
+      git push
+      ________
      npm run custom-deploy
      visualizar README no vscode: command+K + V
      -->
