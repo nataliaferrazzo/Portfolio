@@ -57,6 +57,27 @@ const academic = {
   message: "Please, note that these are just some assignments made for my B. Sc. Engineering Physics degree. None of them are cientific reports or articles.",
   data: [
     {
+      title: 'Solving the Travelling Salesman Problem on IBM Quantum',
+      subject: 'Quantum Computing',
+      image: require('./projects/images/unigou.png'),
+      message: 'In this article, the basic concepts of Quantum Computing were studied and applied to NP-hard Travelling Salesman problem. Through the tools provided by IBM Quantum and Qiskit initiative, it was able to implement it via Python libraries and Jupyter Notebook. The results were as computed for similar publications.',
+      paper: require('./projects/quantum/UNIGOU_Natália Capra Ferrazzo.pdf')
+    },
+    {
+      title: 'UNIGOU Remote Research Practice: A Scientific Training Course',
+      subject: 'Quantum Computing',
+      image: require('./projects/images/elaboracao.png'),
+      message: 'The Czech-Brazilian Academic Cooperation Institute (INCBAC Institute) annually promotes the UNIGOU Remote program. Through the program, Brazilian undergraduate and master\'s students have the opportunity to work with Czech universities in the design and development of scientific research activities in their areas of expertise, identifying research gaps and proposing appropriate approaches and methods to fill the gap in the topic. In this work, Brno University proposed the initial topic “Quantum-Inspired Optimization Algorithms”. Therefore, a literature review was carried out to study the feasibility of designing and carrying out the research. We sought to identify scientific problems and gaps within the area of ​​Physical Engineering where the author could add scientific value. With that, the research topic was changed to “Solving the Traveling Salesman Problem on IBM Quantum®” and the elaboration of a new article proposal was developed.',
+      paper: require('./projects/quantum/Elaboração de Projeto de Engenharia Física.pdf')
+    },
+    {
+      title: 'UNIGOU Remote Publication: A Research Paper Submission',
+      subject: 'Quantum Computing',
+      image: require('./projects/images/execucao.png'),
+      message: 'Through the Institute of Czech-Brazilian Academic Cooperation (INCBAC Institute), the elaboration and development of an article was established proposing a new approach to the NP-hard mathematical problem of the Traveling Salesman. Using the IBM Quantum® environment, the problem was analyzed and described and its solution implemented and documented.',
+      paper: require('./projects/quantum/Execução de Projeto de Engenharia Física.pdf')
+    },
+    {
       title: 'Monte Carlo',
       subject: 'Numerical Methods',
       image: require('./projects/images/monte-carlo.png'),
