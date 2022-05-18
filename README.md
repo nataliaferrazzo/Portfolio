@@ -2,7 +2,7 @@
       npm run build
       npm start
 
-      Para deploiar:
+      Para deploiar apenas atualizar git:
       git add .
       git commit
       git push
