@@ -45,9 +45,9 @@ const about = {
 const repos = {
   show: true,
   heading: "Git Projects",
-  gitHubUsername: "nataliaferrazzo", //i.e."johnDoe12Gh"
+  gitHubUsername: "nataliaferrazzo",
   reposLength: 0,
-  specificRepos: ["Solving-the-Travelling-Salesman-Problem-on-IBM-Quantum", "DataScience_Project", "QIEDA"],
+  specificRepos: ["Solving-the-Travelling-Salesman-Problem-on-IBM-Quantum", "DataScience_Project", "ibm-quantum-spring-challenge-2022"],
   message: 'Please, note that these are repositories that I am or have been working on. They are not necessarily my own authority.',
 };
 
