@@ -33,7 +33,7 @@ const about = {
   imageLink: require("./Eu.jpeg"),
   imageSize: 300,
   message:
-    "B. Sc. in Engineering Physics at Federal University of Rio Grande do Sul, currently in 8th semester, with expected graduation on December, 2022. I work as an Intern at IBM. I'm fascinated about Physics, Quantum Computing and Data Science. In my free time I like working on open source projects and learn about Applied Quantum Physics. 💜",
+    "B. Sc. in Engineering Physics at Federal University of Rio Grande do Sul, currently in 9th semester, with expected graduation on October, 2022. I work as an Intern at IBM. I'm fascinated about Physics, Quantum Computing and Data Science. In my free time I like working on open source projects and learn about Applied Quantum Physics. 💜",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
