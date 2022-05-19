@@ -66,8 +66,8 @@ const IBM = ({ image }) => {
           <h5 className="vertical-timeline-element-title">Technologies:</h5>
           <p>
             <ul>
+              <li>JavaScript</li>
               <li>Node.js</li>
-              <li>Javascript</li>
               <li>Postman</li>
               <li>Watson Studio</li>
               <li>Docker</li>
