@@ -1,5 +1,8 @@
 <!-- PARA ATUALIZAR: Apenas commitar no git
+
      visualizar README no vscode: command+K + V
+
+     testar: npm start
      -->
 
 <!-- PROJECT LOGO -->

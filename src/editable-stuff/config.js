@@ -231,7 +231,6 @@ const cadastra = {
   show: true,
   image: require('../assets/img/cadastra.png')
 }
-
 // para adicionar novo badge é necessário apenas adicionar as infos aqui
 const badges = {
   show: true,
@@ -243,6 +242,20 @@ const badges = {
       date: 'Issued in March 2021',
       logo: require('../assets/badges/ESEF.png'),
       url: "https://www.efset.org/cert/fioTf1"
+    },
+    {
+      heading: 'Quantum Computation using Qiskit v0.2X',
+      company: 'IBM',
+      date: 'Issued in June 2022',
+      logo: require('../assets/badges/ibm-certified-associate-developer-quantum-computation-using-qiskit-v0-2x.png'),
+      url: "https://www.credly.com/badges/914b57fc-0b5b-4e7a-8c15-c688b8146255/public_url"
+    },
+    {
+      heading: 'The Complete Quantum Computing Course',
+      company: 'Udemy',
+      date: 'Issued in June 2022',
+      logo: require('../assets/badges/udemy.png'),
+      url: "https://www.udemy.com/certificate/UC-08009477-847b-4d87-b8ec-b7d16139d91a/"
     },
     {
       heading: 'Quantum Conversations',
