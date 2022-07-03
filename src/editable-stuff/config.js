@@ -18,7 +18,7 @@ const mainBody = {
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/nataliaferrazzo/",
+      url: "https://www.linkedin.com/in/natalia-capra-ferrazzo/",
     },
     {
       image: "fa-envelope",
