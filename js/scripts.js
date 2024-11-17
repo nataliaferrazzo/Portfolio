@@ -66,7 +66,8 @@
 
         // Add icons to each block
         $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+            const companyName = $(this).find('.vtimeline-content h3').text().toLowerCase().replace(/\s+/g, '-'); // Convert company name to lowercase with dashes
+            $(this).prepend('<div class="vtimeline-icon"><img src="images/' + companyName + '.png" alt="' + companyName + ' logo"></div>');
         });
 
         // Add dates to the timeline if exists

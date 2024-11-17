@@ -1,11 +1,4 @@
 /*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
     Description: This file contains all the styles associated with the page
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
@@ -34,7 +27,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #cecece;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -45,9 +38,29 @@ $background-alt: #f2f2f5;
 $border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
+$heading: #4b4b4b;
+$title: #1a1b1c;
 $text: #74808a;
 
+.source-serif-4{
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cormorant-sc-regular {
+    font-family: "Cormorant SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mate-sc-regular {
+    font-family: "Mate SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 /*
     ---------------------
     ----- 2. Mixins -----
@@ -85,7 +98,7 @@ $text: #74808a;
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Source Serif 4", serif;
     font-size: 16px;
 
     &.active {
@@ -93,7 +106,7 @@ body {
         z-index: -1;
     }
 }
-
+  
 // No JS styles
 .no-js {
     #experience-timeline {
@@ -140,56 +153,63 @@ body {
   }
 }
 
+h1, h2, h3 {
+    font-family: 'Mate SC', serif; // Fonte específica para títulos
+}
+
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    text-align: center;
-    z-index: 10;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 999; // Ensures the header stays on top of other elements
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Adds shadow for separation
+    padding: 5px 20px;
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 0.75s;
+    backdrop-filter: blur(1px); /* Apply blur to the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
 
     ul {
-        display: inline-block;
-        background: $background;
-        text-align: center;
-        padding: 10px;
+        display: flex; // Use flexbox for alignment
+        justify-content: flex-end; // Aligns menu items to the right
         margin: 0;
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 4px;
+        padding: 0;
+        list-style: none; // Removes default list styles
+        width: 100%;
     }
 
     li {
-        display: inline-block;
+        margin: 0 15px; // Adds spacing between menu items
     }
 
     a {
         display: block;
-        color: $base-color;
-        padding: 10px;
+        color: $heading;
+        font-weight: bold;
+        padding: 5px 10px; // Clickable area for menu links
+        text-decoration: none; // Removes underline
+        transition: color 0.3s ease, background-color 0.3s ease;
 
         &:hover {
-            color: $base-color-hover;
-            text-decoration: none;
-            background: #eee;
-            border-radius: 4px;
+            color: darken($heading, 15%);
+            // background: lighten($base-color-hover, 50%); // Subtle background on hover
+            border-radius: 4px; // Rounded corners
+            text-decoration: none; // Removes underline
         }
 
         &:focus {
-            color: $base-color;
+            color: $heading;
+            outline: none;
             text-decoration: none;
         }
     }
 
-    &.active {
-        display: block;
-    }
-
     &.sticky {
-        position: fixed;
+        position: fixed; // Sticky header behavior
         z-index: 999;
     }
 }
@@ -346,42 +366,88 @@ footer {
 */
 
 #lead {
+    display: flex; /* Creates a flex container */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Ensures space between content and image */
     position: relative;
     height: 100vh;
-    min-height: 500px;
-    max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    padding: 20px;
+    // background: url(../images/lead-bg.jpg);
     background-size: cover;
-    padding: 15px;
     overflow: hidden;
 }
 
 #lead-content {
-    position: absolute;
+    flex: 1; /* Makes this section take the available space */
     z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
+    transform: none;
+    text-align: left;
+    margin-left: 60px;
     h1, h2 {
         margin: 0;
     }
 
     h1 {
-        color: #fff;
-        font-weight: 900;
-        font-size: 5em;
-        text-transform: uppercase;
+        font-family: "Mate SC", serif;
+        color: $title;
+        font-weight: 400;
+        font-size: 2em;
         letter-spacing: 0.05em;
         line-height: 0.9em;
+        margin-bottom: 20px;
     }
 
     h2 {
-        color: lighten($base-color, 25%);
-        font-weight: 500;
-        font-size: 2.25em;
-        margin-bottom: 15px;
+        color: $heading;
+        font-weight: 400;
+        font-size: 1.25em;
+        margin-bottom: 80px;
+    }
+
+    p{
+        margin-right: 100px;
+        text-align: justify;
+        line-height: 2em; 
+        font-size: 1.25em;
+    }
+}
+
+#icons-container{
+    margin-left: 20px;
+    z-index: 10;
+    margin-right: 90px;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically in the parent container */
+    align-items: center; /* Centers items horizontally */
+    gap: 30px; /* Adds spacing between each item */
+    margin-top: 20px; /* Optional: Adds spacing above the icons container */
+}
+
+#icons-container i {
+    font-size: 5rem; /* Ajuste o tamanho dos ícones */
+    color: white; /* Define a cor principal */
+    transition: color 0.3s ease; /* Efeito suave para hover */
+}
+
+#icons-container i:hover {
+    color: $base-color-hover; /* Muda a cor ao passar o mouse */
+}
+
+#icons-container a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+#picture {
+    flex: 0 0 auto; /* Ensures the image doesn't stretch */
+    margin-bottom: 40px;
+    img {
+        width: 200px; /* Adjust the size as needed */
+        height: 200px; /* Keeps the image square */
+        border-radius: 50%; /* Makes the image rounded */
+        object-fit: cover; /* Ensures the image scales properly */
+        border: 3px solid $base-color; /* Optional: Add a border for styling */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
     }
 }
 
@@ -560,6 +626,14 @@ footer {
     }
 }
 
+.vtimeline-icon img {
+    width: 50px; /* Adjust the size */
+    height: 50px;
+    border-radius: 10%; /* Circular images */
+    object-fit: cover; /* Scales the image properly */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
 .vtimeline-date {
     width: 260px;
     text-align: right;
@@ -617,10 +691,41 @@ footer {
         margin: 0;
         color: $text;
         font-size: 0.9em;
+        line-height: 1.6; /* Improves text readability */
     }
 
     ul {
         padding: 0 0 0 15px;
+    }
+}
+
+.education-header {
+    display: flex;
+    align-items: flex-start; /* Aligns the image and text at the top */
+    margin-bottom: 10px;
+}
+
+.education-content {
+    flex: 1; /* Makes the text take up the available space */
+}
+
+.education-image {
+    flex: 0 0 auto; /* Garante que o tamanho seja fixo */
+    // display: flex; /* Para centralizar a imagem */
+    // align-items: center;
+    // justify-content: center;
+    width: 50px; /* Tamanho fixo da largura */
+    height: 50px; /* Tamanho fixo da altura */
+    border-radius: 8px; /* Canto levemente arredondado */
+    overflow: hidden; /* Garante que a imagem não ultrapasse a borda */
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+    // background: #f8f8f8; /* Cor de fundo opcional */
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para estilo */
+
+    img {
+        width: 100%; /* Faz a imagem ocupar toda a largura do container */
+        height: 100%; /* Faz a imagem ocupar toda a altura do container */
+        object-fit: contain; /* Mantém a proporção da imagem */
     }
 }
 
