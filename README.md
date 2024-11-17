@@ -1,5 +1,3 @@
-# Portfolio
-
 <br />
 <p align="center">
   <h1 align="center">Portfolio</h1>
@@ -9,7 +7,5 @@
     <a href="https://nferrazzo.com">nferrazzo.com</a>
   </p>
 </p>
-
-## Notice:
 
 This project has been highly inspired in [Ryan Fitzgerald's template](https://github.com/RyanFitzgerald/devportfolio). Feel free to fork, use and maintain your own version.
