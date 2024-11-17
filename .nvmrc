@@ -1,1 +1,2 @@
-10.22.0
+echo "10.22.0" > .nvmrc
+<!-- You need to run nvm use to switch to the new version of Node.js. -->

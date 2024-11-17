@@ -214,6 +214,12 @@ header {
     }
 }
 
+/*
+    --------------------------
+    ----- 3.5 Menu Styles ----
+    --------------------------
+*/
+
 #menu {
     &.active {
         display: block;
@@ -511,7 +517,7 @@ footer {
     ---------------------------
 */
 
-#about {
+#home {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
 
@@ -522,6 +528,91 @@ footer {
     p {
         color: $text;
         margin: 0;
+    }
+}
+
+/*
+    -------------------------------
+    ----- 5. Education Styles -----
+    -------------------------------
+*/
+
+#education {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid $border;
+    text-align: left;
+
+    h3 {
+        font-weight: 500;
+        float: left;
+        margin: 0;
+        color: $heading;
+    }
+
+    span {
+        color: $text;
+        float: right;
+    }
+
+    h4 {
+        color: $text;
+        clear: both;
+        font-weight: 500;
+        margin: 0 0 15px 0;
+    }
+
+    p, ul {
+        margin: 0;
+        color: $text;
+        font-size: 0.9em;
+        line-height: 1.6; /* Improves text readability */
+    }
+
+    ul {
+        padding: 0 0 0 15px;
+    }
+}
+
+.education-header {
+    display: flex;
+    align-items: flex-start; /* Aligns the image and text at the top */
+    margin-bottom: 10px;
+}
+
+.education-content {
+    flex: 1; /* Makes the text take up the available space */
+}
+
+.education-image {
+    flex: 0 0 auto; /* Garante que o tamanho seja fixo */
+    // display: flex; /* Para centralizar a imagem */
+    // align-items: center;
+    // justify-content: center;
+    width: 50px; /* Tamanho fixo da largura */
+    height: 50px; /* Tamanho fixo da altura */
+    border-radius: 8px; /* Canto levemente arredondado */
+    overflow: hidden; /* Garante que a imagem não ultrapasse a borda */
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+    // background: #f8f8f8; /* Cor de fundo opcional */
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para estilo */
+
+    img {
+        width: 100%; /* Faz a imagem ocupar toda a largura do container */
+        height: 100%; /* Faz a imagem ocupar toda a altura do container */
+        object-fit: contain; /* Mantém a proporção da imagem */
     }
 }
 
@@ -646,11 +737,11 @@ footer {
 
 /*
     -------------------------------
-    ----- 7. Education Styles -----
+    -- 7. Extracurricular Styles --
     -------------------------------
 */
 
-#education {
+#extracurricular {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
@@ -661,7 +752,7 @@ footer {
     }
 }
 
-.education-block {
+.extracurricular-block {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
@@ -699,17 +790,17 @@ footer {
     }
 }
 
-.education-header {
+.extracurricular-header {
     display: flex;
     align-items: flex-start; /* Aligns the image and text at the top */
     margin-bottom: 10px;
 }
 
-.education-content {
+.extracurricular-content {
     flex: 1; /* Makes the text take up the available space */
 }
 
-.education-image {
+.extracurricular-image {
     flex: 0 0 auto; /* Garante que o tamanho seja fixo */
     // display: flex; /* Para centralizar a imagem */
     // align-items: center;
@@ -1000,7 +1091,7 @@ footer {
         }
     }
 
-    #about {
+    #home {
         text-align: center;
 
         p {
