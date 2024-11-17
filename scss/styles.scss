@@ -512,26 +512,6 @@ footer {
 }
 
 /*
-    ---------------------------
-    ----- 5. About Styles -----
-    ---------------------------
-*/
-
-#home {
-    padding: 75px 15px;
-    border-bottom: 1px solid $border;
-
-    h2 {
-        color: $heading;
-    }
-
-    p {
-        color: $text;
-        margin: 0;
-    }
-}
-
-/*
     -------------------------------
     ----- 5. Education Styles -----
     -------------------------------
@@ -690,6 +670,13 @@ footer {
         font-size: 0.9em;
         margin: 0;
     }
+
+    li {
+        color: $text;
+        font-size: 0.9em;
+        margin: 0;
+        margin-bottom: 5px;
+    }
 }
 
 .vtimeline-point {
@@ -822,67 +809,124 @@ footer {
 
 /*
     -------------------------------
-    ----- 8. Project Styles -----
+    -- 8. Certifications Styles ---
     -------------------------------
 */
 
-#projects {
+#certifications {
     padding: 50px 15px;
-    border-bottom: 1px solid $border;
     text-align: center;
-
-    h2 {
-        color: $heading;
-        margin-bottom: 50px;
+    background-color: #f9f9f9; /* Optional: Background for the section */
+    align-items: center; /* Centers items vertically */
+    justify-items: center; /* Centers items horizontally */
+    .heading {
+        margin-bottom: 60px;
     }
 }
 
-.project {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 4px;
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    max-width: 800px; /* Constrains the grid's width */
+    margin: 0 auto; /* Centers the grid */
 }
 
-.project-image {
-    float: left;
+.certification-item {
+    text-align: center;
 }
 
-.project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
-    padding: 15px;
-
-    h3 {
-        font-size: 1.5em;
-        font-weight: 300;
-        color: $heading;
-        margin: 0 0 15px 0;
-    }
-
-    p {
-        color: $text;
-        margin: 0 0 15px 0;
-        font-size: 0.9em;
-    }
+.certification-item img {
+    width: 100px; /* Adjust the size of the badge images */
+    height: 100px;
+    object-fit: contain;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smoother animation */
 }
 
-.no-image {
-    .project-info {
-        position: relative;
-        margin: 0;
-        padding: 30px 15px;
-        transform: none;
-    }
+.certification-item p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #374054;
 }
 
-#more-projects {
-    display: none;
+.certification-item img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
+
+/*
+    -------------------------------
+    ------ 8. Project Styles ------
+    -------------------------------
+*/
+
+// #projects {
+//     padding: 50px 15px;
+//     border-bottom: 1px solid $border;
+//     text-align: center;
+
+//     h2 {
+//         color: $heading;
+//         margin-bottom: 50px;
+//     }
+
+//     p {
+//         margin: 0;
+//         color: $text;
+//         font-size: 0.9em;
+//         line-height: 1.6; /* Improves text readability */
+//     }
+// }
+
+// .project {
+//     position: relative;
+//     max-width: 900px;
+//     margin: 0 auto 30px auto;
+//     overflow: hidden;
+//     background: #fff;
+//     border-radius: 4px;
+// }
+
+// .project-image {
+//     float: left;
+// }
+
+// .project-info {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     margin-left: 300px;
+//     padding: 15px;
+
+//     h3 {
+//         font-size: 1.5em;
+//         font-weight: 300;
+//         color: $heading;
+//         margin: 0 0 15px 0;
+//     }
+
+//     p {
+//         color: $text;
+//         margin: 0 0 15px 0;
+//         font-size: 0.9em;
+//     }
+// }
+
+// .no-image {
+//     .project-info {
+//         position: relative;
+//         margin: 0;
+//         padding: 30px 15px;
+//         transform: none;
+//     }
+// }
+
+// #more-projects {
+//     display: none;
+// }
 
 /*
     -------------------------------
@@ -1088,14 +1132,6 @@ footer {
 
         h2 {
             font-size: 1.75em;
-        }
-    }
-
-    #home {
-        text-align: center;
-
-        p {
-            text-align: left;
         }
     }
 
